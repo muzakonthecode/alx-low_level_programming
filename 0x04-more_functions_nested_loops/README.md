@@ -1,118 +1,86 @@
 # 0x04. C - More functions, more nested loops
 
-### [0. isupper](./0-putchar.c)
+### [0. isupper](./0-isupper.c)
   * Write a function that checks for uppercase character.
 
-Prototype: int _isupper(int c);
-Returns 1 if c is uppercase
-Returns 0 otherwise
+    Prototype: int _isupper(int c);
+    Returns 1 if c is uppercase
+    Returns 0 otherwise
 FYI: The standard library provides a similar function: isupper. Run man isupper to learn more.
 
-### [1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](./1-alphabet.c)
-  * Write a function that prints the alphabet, in lowercase, followed by a new line.
+### [1. isdigit](./1-isdigit.c)
+  * Write a function that checks for a digit (0 through 9).
 
-    Prototype: void print_alphabet(void);
+    Prototype: int _isdigit(int c);
+    Returns 1 if c is a digit
+    Returns 0 otherwise
+FYI: The standard library provides a similar function: isdigit. Run man isdigit to learn more.
+
+### [2. Collaboration is multiplication](./2-mul.c)
+  * Write a function that multiplies two integers.
+
+    Prototype: int mul(int a, int b);
+
+### [3. The numbers speak for themselves](./3-print_numbers.c)
+  * Write a function that prints the numbers, from 0 to 9, followed by a new line.
+
+  Prototype: void print_numbers(void);
+  You can only use _putchar twice in your code
+
+### [4. I believe in numbers and signs](./4-print_most_numbers.c)
+  * Write a function that prints the numbers, from 0 to 9, followed by a new line.
+
+    Prototype: void print_most_numbers(void);
+    Do not print 2 and 4
     You can only use _putchar twice in your code
 
-### [2. 10 x alphabet](./2-print_alphabet_x10.c)
-  * Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
+### [5. Numbers constitute the only universal language](./5-more_numbers.c)
+  * Write a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
 
-    Prototype: void print_alphabet_x10(void);
-    You can only use _putchar twice in your code
+    Prototype: void more_numbers(void);
+    You can only use _putchar three times in your code
 
-### [3. islower](./3-islower.c)
-  * Write a function that checks for lowercase character.
+### [6. The shortest distance between two points is a straight line](./6-print_line.c)
+  * Write a function that draws a straight line in the terminal.
 
-    Prototype: int _islower(int c);
-    Returns 1 if c is lowercase
-    Returns 0 otherwise
+    Prototype: void print_line(int n);
+    You can only use _putchar function to print
+    Where n is the number of times the character _ should be printed
+    The line should end with a \n
+    If n is 0 or less, the function should only print \n
 
-FYI: The standard library provides a similar function: islower. Run man islower to learn more.
+### [7. I feel like I am diagonally parked in a parallel universe](./7-print_diagonal.c)
+  * Write a function that draws a diagonal line on the terminal.
 
-### [4. isalpha](./4-isalpha.c)
-  * Write a function that checks for alphabetic character.
+    Prototype: void print_diagonal(int n);
+    You can only use _putchar function to print
+    Where n is the number of times the character \ should be printed
+    The diagonal should end with a \n
+    If n is 0 or less, the function should only print a \n
 
-    Prototype: int _isalpha(int c);
-    Returns 1 if c is a letter, lowercase or uppercase
-    Returns 0 otherwise
+### [8. You are so much sunshine in every square inch](./8-print_square.c)
+  * Write a function that prints a square, followed by a new line.
 
-FYI: The standard library provides a similar function: isalpha. Run man isalpha to learn more.
+    Prototype: void print_square(int size);
+    You can only use _putchar function to print
+    Where size is the size of the square
+    If size is 0 or less, the function should print only a new line
+    Use the character # to print the square
 
-### [5. Sign](./5-sign.c)
-  * Write a function that prints the sign of a number.
+### [9. Fizz-Buzz](./9-fizz_buzz.c)
+  * The “Fizz-Buzz test” is an interview question designed to help filter out the 99.5% of programming job candidates who can’t seem to program their way out of a wet paper bag.
 
-    Prototype: int print_sign(int n);
-    Returns 1 and prints + if n is greater than zero
-    Returns 0 and prints 0 if n is zero
-    Returns -1 and prints - if n is less than zero
+    Write a program that prints the numbers from 1 to 100, followed by a new line. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
 
-### [6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you](./6-abs.c)
-  * Write a function that computes the absolute value of an integer.
+      Each number or word should be separated by a space
+      You are allowed to use the standard library
 
-    Prototype: int _abs(int);
+### [10. Triangles](./10-print_triangle.c)
+  * Write a function that prints a triangle, followed by a new line.
 
-FYI: The standard library provides a similar function: abs. Run man abs to learn more.
+    Prototype: void print_triangle(int size);
+    You can only use _putchar function to print
+    Where size is the size of the triangle
+    If size is 0 or less, the function should print only a new line
+    Use the character # to print the triangle
 
-### [7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](./7-print_last_digit.c)
-  * Write a function that prints the last digit of a number.
-
-    Prototype: int print_last_digit(int);
-    Returns the value of the last digit
-
-### [8. I'm federal agent Jack Bauer, and today is the longest day of my life](./8-24_hours.c)
-  * Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
-
-    Prototype: void jack_bauer(void);
-    You can listen to this soundtrack while coding :)
-
-### [9. Learn your times table](./9-times_table.c)
-  * Write a function that prints the 9 times table, starting with 0.
-
-    Prototype: void times_table(void);
-    Format: see example
-
-### [10. a + b](./10-add.c)
-  * Write a function that adds two integers and returns the result.
-
-    Prototype: int add(int, int);
-
-### [11. 98 Battery Street, the OG](./11-print_to_98.c)
-  * Write a function that prints all natural numbers from n to 98, followed by a new line.
-
-    Prototype: void print_to_98(int n);
-    Numbers must be separated by a comma, followed by a space
-    Numbers should be printed in order
-    The first printed number should be the number passed to your function
-    The last printed number should be 98
-    You are allowed to use the standard library
-
-### [12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself](./100-times_table.c)
-  * Write a function that prints the n times table, starting with 0.
-
-    Prototype: void print_times_table(int n);
-    If n is greater than 15 or less than 0 the function should not print anything
-
-### [13. Nature made the natural numbers; All else is the work of women](./101-natural.c)
-  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Write a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
-
-    You are allowed to use the standard library
-
-### [14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A](./102-fibonacci.c)
-  * Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
-
-    The numbers must be separated by comma, followed by a space , 
-    You are allowed to use the standard library
-
-### [15. Even Liber Abbaci](./103-fibonacci.c)
-  * Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with 1 and 2, the first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89. By considering the terms in the Fibonacci sequence whose values do not exceed 4,000,000, write a program that finds and prints the sum of the even-valued terms, followed by a new line.
-
-    You are allowed to use the standard library
-
-### [16. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+](./104-fibonacci.c)
-  * Write a program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.
-
-    The numbers should be separated by comma, followed by a space ,
-    You are allowed to use the standard library
-    You are not allowed to use any other library (You can’t use GMP etc…)
-    You are not allowed to use long long, malloc, pointers, arrays/tables, or structures
-    You are not allowed to hard code any Fibonacci number (except for 1 and 2)
