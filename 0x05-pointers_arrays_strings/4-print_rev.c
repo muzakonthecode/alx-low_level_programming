@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string, followed by a new line.
- * @s: input string to print.
+ * print_rev - minic the stdio version of puts
+ * @s: the value to process to the stdout in reverse.
  */
 void print_rev(char *s)
 {
-	int i;
+	int count;
 
-	while (s[i] != '\0')
+	while (*(s + count) != '\0')
 	{
-		i++;
+		count++;
 	}
-	i--;
-	while (s[i] != '\0')
+
+	while (count--)
 	{
-		_putchar(s[i--]);
+		_putchar(*(s + (count)));
 	}
 	_putchar('\n');
 }
