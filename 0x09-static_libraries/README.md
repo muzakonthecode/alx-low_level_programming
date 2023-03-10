@@ -1,7 +1,5 @@
 # 0x09. C - Static libraries
 
-# 0x08. C - Recursion
-
 ### [0. A library is not a luxury but one of the necessities of life](./libmy.a)
 
 -   Create the static library libmy.a containing all the functions listed below:
